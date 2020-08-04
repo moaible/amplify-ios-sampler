@@ -1,8 +1,8 @@
 {
-    "projectName": "amplifyiossampler",
-    "version": "3.0",
-    "frontend": "ios",
     "providers": [
         "awscloudformation"
-    ]
+    ],
+    "projectName": "amplifyiossampler",
+    "version": "3.0",
+    "frontend": "ios"
 }
