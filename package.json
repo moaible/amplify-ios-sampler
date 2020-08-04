@@ -1,0 +1,14 @@
+{
+  "name": "amplify-ios-sampler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "echo": "echo only"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moaible/amplify-ios-sampler.git"
+  },
+  "author": "moaible"
+}
