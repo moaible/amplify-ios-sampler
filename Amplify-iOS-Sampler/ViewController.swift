@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import Amplify
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        do {
+            try Amplify.configure()
+            Amplify.Logging.logLevel = .verbose
+        } catch {
+            print(error)
+        }
     }
-
-
 }
-

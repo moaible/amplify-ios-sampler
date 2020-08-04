@@ -15,6 +15,8 @@
 		58DA84E524D9B40600E7DF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58DA84E324D9B40600E7DF49 /* LaunchScreen.storyboard */; };
 		58DA84F024D9B40600E7DF49 /* Amplify_iOS_SamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84EF24D9B40600E7DF49 /* Amplify_iOS_SamplerTests.swift */; };
 		58DA84FB24D9B40600E7DF49 /* Amplify_iOS_SamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84FA24D9B40600E7DF49 /* Amplify_iOS_SamplerUITests.swift */; };
+		58DA850B24D9C3B700E7DF49 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 58DA850924D9C3B700E7DF49 /* awsconfiguration.json */; };
+		58DA850C24D9C3B700E7DF49 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 58DA850A24D9C3B700E7DF49 /* amplifyconfiguration.json */; };
 		9AA868489041937550808DB0 /* Pods_Amplify_iOS_Sampler_Amplify_iOS_SamplerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005764DE9D8ECB83251E5F5E /* Pods_Amplify_iOS_Sampler_Amplify_iOS_SamplerUITests.framework */; };
 		9F8880E685A3875DC0C0CD54 /* Pods_Amplify_iOS_SamplerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55919EEF5248016A42E56D7 /* Pods_Amplify_iOS_SamplerTests.framework */; };
 		DFC4F55F19CBCFA67B62C4B5 /* Pods_Amplify_iOS_Sampler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A708C8E931A5EFC43EED0137 /* Pods_Amplify_iOS_Sampler.framework */; };
@@ -53,6 +55,8 @@
 		58DA84F624D9B40600E7DF49 /* Amplify-iOS-SamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amplify-iOS-SamplerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DA84FA24D9B40600E7DF49 /* Amplify_iOS_SamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amplify_iOS_SamplerUITests.swift; sourceTree = "<group>"; };
 		58DA84FC24D9B40600E7DF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DA850924D9C3B700E7DF49 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		58DA850A24D9C3B700E7DF49 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		6391C5534ACF708CAA5D8015 /* Pods-Amplify-iOS-SamplerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amplify-iOS-SamplerTests.release.xcconfig"; path = "Target Support Files/Pods-Amplify-iOS-SamplerTests/Pods-Amplify-iOS-SamplerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6915E76FF471FD6E73BE6BFB /* Pods-Amplify-iOS-Sampler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amplify-iOS-Sampler.release.xcconfig"; path = "Target Support Files/Pods-Amplify-iOS-Sampler/Pods-Amplify-iOS-Sampler.release.xcconfig"; sourceTree = "<group>"; };
 		8A7673334C69967022540614 /* Pods-Amplify-iOS-Sampler-Amplify-iOS-SamplerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amplify-iOS-Sampler-Amplify-iOS-SamplerUITests.release.xcconfig"; path = "Target Support Files/Pods-Amplify-iOS-Sampler-Amplify-iOS-SamplerUITests/Pods-Amplify-iOS-Sampler-Amplify-iOS-SamplerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		58DA84D724D9B40200E7DF49 /* Amplify-iOS-Sampler */ = {
 			isa = PBXGroup;
 			children = (
+				58DA850824D9C37300E7DF49 /* Amplify */,
 				58DA84D824D9B40200E7DF49 /* AppDelegate.swift */,
 				58DA84DA24D9B40200E7DF49 /* SceneDelegate.swift */,
 				58DA84DC24D9B40200E7DF49 /* ViewController.swift */,
@@ -156,6 +161,15 @@
 				58DA84FC24D9B40600E7DF49 /* Info.plist */,
 			);
 			path = "Amplify-iOS-SamplerUITests";
+			sourceTree = "<group>";
+		};
+		58DA850824D9C37300E7DF49 /* Amplify */ = {
+			isa = PBXGroup;
+			children = (
+				58DA850A24D9C3B700E7DF49 /* amplifyconfiguration.json */,
+				58DA850924D9C3B700E7DF49 /* awsconfiguration.json */,
+			);
+			path = Amplify;
 			sourceTree = "<group>";
 		};
 		AE929C5778A1DEF35CE34898 /* Frameworks */ = {
@@ -277,7 +291,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58DA850B24D9C3B700E7DF49 /* awsconfiguration.json in Resources */,
 				58DA84E524D9B40600E7DF49 /* LaunchScreen.storyboard in Resources */,
+				58DA850C24D9C3B700E7DF49 /* amplifyconfiguration.json in Resources */,
 				58DA84E224D9B40600E7DF49 /* Assets.xcassets in Resources */,
 				58DA84E024D9B40200E7DF49 /* Main.storyboard in Resources */,
 			);
