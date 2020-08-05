@@ -1,0 +1,84 @@
+{
+  "libraries": [
+    {
+      "name": "Analytics",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "GraphQL API",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "Rest API",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "Auth",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "Data Store",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "Interactions",
+      "platforms": [
+        "javascript"
+      ]
+    },
+    {
+      "name": "Predictions",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "Pub Sub",
+      "platforms": [
+        "javascript"
+      ]
+    },
+    {
+      "name": "Push Notifications",
+      "platforms": [
+        "javascript"
+      ]
+    },
+    {
+      "name": "Storage",
+      "platforms": [
+        "javascript",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "XR",
+      "platforms": [
+        "javascript"
+      ]
+    }
+  ]
+}

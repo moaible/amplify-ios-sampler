@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5892378524DA61A6002A59C3 /* definition.json in Resources */ = {isa = PBXBuildFile; fileRef = 5892378424DA61A6002A59C3 /* definition.json */; };
 		58DA84D924D9B40200E7DF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84D824D9B40200E7DF49 /* AppDelegate.swift */; };
 		58DA84DB24D9B40200E7DF49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84DA24D9B40200E7DF49 /* SceneDelegate.swift */; };
 		58DA84DD24D9B40200E7DF49 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84DC24D9B40200E7DF49 /* RootViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		005764DE9D8ECB83251E5F5E /* Pods_Amplify_iOS_Sampler_Amplify_iOS_SamplerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amplify_iOS_Sampler_Amplify_iOS_SamplerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5892378424DA61A6002A59C3 /* definition.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = definition.json; sourceTree = "<group>"; };
 		58DA84D524D9B40200E7DF49 /* Amplify-iOS-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amplify-iOS-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DA84D824D9B40200E7DF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DA84DA24D9B40200E7DF49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5892378324DA617B002A59C3 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				5892378424DA61A6002A59C3 /* definition.json */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
 		58DA84CC24D9B40100E7DF49 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				58DA850824D9C37300E7DF49 /* Amplify */,
+				5892378324DA617B002A59C3 /* Samples */,
 				58DA84D824D9B40200E7DF49 /* AppDelegate.swift */,
 				58DA84DA24D9B40200E7DF49 /* SceneDelegate.swift */,
 				58DA84DC24D9B40200E7DF49 /* RootViewController.swift */,
@@ -293,6 +304,7 @@
 			files = (
 				58DA850B24D9C3B700E7DF49 /* awsconfiguration.json in Resources */,
 				58DA84E524D9B40600E7DF49 /* LaunchScreen.storyboard in Resources */,
+				5892378524DA61A6002A59C3 /* definition.json in Resources */,
 				58DA850C24D9C3B700E7DF49 /* amplifyconfiguration.json in Resources */,
 				58DA84E224D9B40600E7DF49 /* Assets.xcassets in Resources */,
 				58DA84E024D9B40200E7DF49 /* Main.storyboard in Resources */,
