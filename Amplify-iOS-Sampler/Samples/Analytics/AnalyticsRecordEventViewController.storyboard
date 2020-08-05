@@ -29,13 +29,13 @@
                                         </connections>
                                     </switch>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Analytics Enabled" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itw-rh-QDN">
-                                        <rect key="frame" x="8" y="8" width="297" height="48"/>
+                                        <rect key="frame" x="8" y="16" width="297" height="48"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="f3R-BX-h81"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -46,16 +46,16 @@
                                     <constraint firstItem="Itw-rh-QDN" firstAttribute="leading" secondItem="rSj-6o-23N" secondAttribute="leading" constant="8" id="VRn-mI-WCD"/>
                                     <constraint firstItem="1ET-bc-Bi3" firstAttribute="leading" secondItem="Itw-rh-QDN" secondAttribute="trailing" constant="16" id="whV-11-x4O"/>
                                     <constraint firstAttribute="trailing" secondItem="1ET-bc-Bi3" secondAttribute="trailing" constant="44" id="wyh-2F-gUX"/>
-                                    <constraint firstItem="Itw-rh-QDN" firstAttribute="centerY" secondItem="rSj-6o-23N" secondAttribute="centerY" id="yur-f6-h5K"/>
+                                    <constraint firstItem="Itw-rh-QDN" firstAttribute="centerY" secondItem="rSj-6o-23N" secondAttribute="centerY" constant="8" id="yur-f6-h5K"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFN-eH-5QC">
                                 <rect key="frame" x="0.0" y="774" width="414" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-eP-xWU">
-                                        <rect key="frame" x="88" y="2" width="238" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <state key="normal" title="Record Event!">
+                                        <rect key="frame" x="94" y="14" width="226" height="36"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                        <state key="normal" title="Push Record Event">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -71,25 +71,24 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="dAa-cu-2tu">
-                                <rect key="frame" x="16" y="209" width="382" height="64"/>
+                                <rect key="frame" x="16" y="209" width="382" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Ojx-QG-qoL"/>
+                                    <constraint firstAttribute="height" constant="48" id="Ojx-QG-qoL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-F7-xUo">
                                 <rect key="frame" x="0.0" y="137" width="414" height="64"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Event Name：" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cle-CZ-cCQ">
-                                        <rect key="frame" x="8" y="8" width="297" height="48"/>
+                                        <rect key="frame" x="8" y="8" width="398" height="48"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Cle-CZ-cCQ" secondAttribute="height" multiplier="99:16" id="6t1-6K-CTr"/>
                                             <constraint firstAttribute="height" constant="48" id="zcS-D5-3pv"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -98,6 +97,7 @@
                                     <constraint firstItem="Cle-CZ-cCQ" firstAttribute="top" secondItem="hdr-F7-xUo" secondAttribute="top" constant="8" id="Lw0-O1-QIk"/>
                                     <constraint firstItem="Cle-CZ-cCQ" firstAttribute="leading" secondItem="hdr-F7-xUo" secondAttribute="leading" constant="8" id="QqL-42-CXm"/>
                                     <constraint firstAttribute="bottom" secondItem="Cle-CZ-cCQ" secondAttribute="bottom" constant="8" id="ZYJ-BX-dRK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cle-CZ-cCQ" secondAttribute="trailing" constant="8" id="qEw-bC-L1l"/>
                                     <constraint firstAttribute="height" constant="64" id="tiN-rV-B4O"/>
                                 </constraints>
                             </view>
