@@ -8,14 +8,19 @@
 
 import UIKit
 import Amplify
+import AmplifyPlugins
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         do {
-            try Amplify.configure()
             Amplify.Logging.logLevel = .verbose
+            do { // Analytics
+                try Amplify.add(plugin: AWSCognitoAuthPlugin())
+                try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
+            }
+            try Amplify.configure()
         } catch {
             print("amplify configuration failed: \(error)")
         }
