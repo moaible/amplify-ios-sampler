@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lhr-zs-aOl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Analytics Record Event View Controller-->
+        <scene sceneID="a26-tx-HGg">
+            <objects>
+                <viewController storyboardIdentifier="AnalyticsRecordEventViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lhr-zs-aOl" customClass="AnalyticsRecordEventViewController" customModule="Amplify_iOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Gs-2d-a5H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSj-6o-23N">
+                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                                <subviews>
+                                    <switch autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-bc-Bi3">
+                                        <rect key="frame" x="321" y="20.5" width="51" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="E5j-WD-zsh"/>
+                                        </constraints>
+                                        <color key="onTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeAnalyticsEnableSwitch:" destination="Lhr-zs-aOl" eventType="valueChanged" id="p0M-iM-rmp"/>
+                                        </connections>
+                                    </switch>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Analytics Enabled" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itw-rh-QDN">
+                                        <rect key="frame" x="8" y="8" width="297" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="f3R-BX-h81"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="1ET-bc-Bi3" firstAttribute="centerY" secondItem="rSj-6o-23N" secondAttribute="centerY" constant="4" id="IQj-zH-462"/>
+                                    <constraint firstAttribute="height" constant="64" id="QrJ-oG-74b"/>
+                                    <constraint firstItem="Itw-rh-QDN" firstAttribute="leading" secondItem="rSj-6o-23N" secondAttribute="leading" constant="8" id="VRn-mI-WCD"/>
+                                    <constraint firstItem="1ET-bc-Bi3" firstAttribute="leading" secondItem="Itw-rh-QDN" secondAttribute="trailing" constant="16" id="whV-11-x4O"/>
+                                    <constraint firstAttribute="trailing" secondItem="1ET-bc-Bi3" secondAttribute="trailing" constant="44" id="wyh-2F-gUX"/>
+                                    <constraint firstItem="Itw-rh-QDN" firstAttribute="centerY" secondItem="rSj-6o-23N" secondAttribute="centerY" id="yur-f6-h5K"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFN-eH-5QC">
+                                <rect key="frame" x="0.0" y="774" width="414" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB3-eP-xWU">
+                                        <rect key="frame" x="88" y="2" width="238" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Record Event!">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchRecordEventButton:" destination="Lhr-zs-aOl" eventType="touchUpInside" id="H0i-pL-zV1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lB3-eP-xWU" firstAttribute="centerX" secondItem="nFN-eH-5QC" secondAttribute="centerX" id="EnM-gd-A40"/>
+                                    <constraint firstAttribute="height" constant="64" id="oc0-Og-hkS"/>
+                                    <constraint firstItem="lB3-eP-xWU" firstAttribute="centerY" secondItem="nFN-eH-5QC" secondAttribute="centerY" id="zgN-ox-iPs"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="dAa-cu-2tu">
+                                <rect key="frame" x="16" y="209" width="382" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Ojx-QG-qoL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-F7-xUo">
+                                <rect key="frame" x="0.0" y="137" width="414" height="64"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Event Name：" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cle-CZ-cCQ">
+                                        <rect key="frame" x="8" y="8" width="297" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Cle-CZ-cCQ" secondAttribute="height" multiplier="99:16" id="6t1-6K-CTr"/>
+                                            <constraint firstAttribute="height" constant="48" id="zcS-D5-3pv"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Cle-CZ-cCQ" firstAttribute="top" secondItem="hdr-F7-xUo" secondAttribute="top" constant="8" id="Lw0-O1-QIk"/>
+                                    <constraint firstItem="Cle-CZ-cCQ" firstAttribute="leading" secondItem="hdr-F7-xUo" secondAttribute="leading" constant="8" id="QqL-42-CXm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cle-CZ-cCQ" secondAttribute="bottom" constant="8" id="ZYJ-BX-dRK"/>
+                                    <constraint firstAttribute="height" constant="64" id="tiN-rV-B4O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hdr-F7-xUo" firstAttribute="width" secondItem="rSj-6o-23N" secondAttribute="width" id="9MW-4T-u93"/>
+                            <constraint firstItem="rSj-6o-23N" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="K85-vr-OuZ"/>
+                            <constraint firstItem="hdr-F7-xUo" firstAttribute="top" secondItem="rSj-6o-23N" secondAttribute="bottom" constant="29" id="P4h-Zv-jR3"/>
+                            <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="hdr-F7-xUo" secondAttribute="trailing" id="T38-df-UpO"/>
+                            <constraint firstItem="rSj-6o-23N" firstAttribute="top" secondItem="tXQ-wg-8S9" secondAttribute="top" id="T8w-nv-LvA"/>
+                            <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="dAa-cu-2tu" secondAttribute="trailing" constant="16" id="U67-kW-7Np"/>
+                            <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="rSj-6o-23N" secondAttribute="trailing" id="hCs-SJ-BSQ"/>
+                            <constraint firstItem="dAa-cu-2tu" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" constant="16" id="ptd-Mw-ohr"/>
+                            <constraint firstItem="nFN-eH-5QC" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="rW3-wf-y9F"/>
+                            <constraint firstItem="dAa-cu-2tu" firstAttribute="top" secondItem="hdr-F7-xUo" secondAttribute="bottom" constant="8" id="sdX-eg-yME"/>
+                            <constraint firstItem="tXQ-wg-8S9" firstAttribute="bottom" secondItem="nFN-eH-5QC" secondAttribute="bottom" constant="24" id="tCu-pp-KNm"/>
+                            <constraint firstItem="hdr-F7-xUo" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="uRi-Xd-rOl"/>
+                            <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="nFN-eH-5QC" secondAttribute="trailing" id="uZJ-LQ-BJ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tXQ-wg-8S9"/>
+                    </view>
+                    <connections>
+                        <outlet property="analyticsEnabledSwitch" destination="1ET-bc-Bi3" id="Dy9-0k-q2t"/>
+                        <outlet property="eventNameField" destination="dAa-cu-2tu" id="dpA-oI-maU"/>
+                        <outlet property="recordEventButton" destination="lB3-eP-xWU" id="zGq-0h-8ba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGJ-f0-51d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+</document>

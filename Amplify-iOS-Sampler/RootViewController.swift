@@ -72,8 +72,8 @@ extension RootViewController {
         guard let path = Bundle.main.path(forResource: "definition", ofType: "json") else {
             throw SampleDefinitionError.cannotReadDefinition
         }
-        let url = URL(fileURLWithPath: path)
-        let definitionData = try Data(contentsOf: url)
+        let fileURL = URL(fileURLWithPath: path)
+        let definitionData = try Data(contentsOf: fileURL)
         return try JSONDecoder().decode(SampleDefinition.self, from: definitionData)
     }
 }

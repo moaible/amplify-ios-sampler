@@ -10,6 +10,11 @@
             "StackName": "amplify-amplifyiossampler-dev-12004",
             "StackId": "arn:aws:cloudformation:ap-northeast-1:300336868397:stack/amplify-amplifyiossampler-dev-12004/5c643880-d66e-11ea-8145-0ab0f59df27e",
             "AmplifyAppId": "d3c03yd7p2g45b"
+        },
+        "categories": {
+            "auth": {
+                "cognito7e77afd3": {}
+            }
         }
     }
 }

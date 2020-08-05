@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		580FAFCC24DA7265002BBB6F /* LibraryFeatureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580FAFCB24DA7265002BBB6F /* LibraryFeatureListViewController.swift */; };
+		580FAFD324DAE750002BBB6F /* LibraryFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580FAFD224DAE750002BBB6F /* LibraryFeatures.swift */; };
+		5856FBE824DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856FBE724DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift */; };
+		5856FBEB24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856FBEA24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift */; };
+		5856FBEE24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */; };
 		5892378524DA61A6002A59C3 /* definition.json in Resources */ = {isa = PBXBuildFile; fileRef = 5892378424DA61A6002A59C3 /* definition.json */; };
 		5892378724DA6257002A59C3 /* SampleDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892378624DA6257002A59C3 /* SampleDefinition.swift */; };
 		58DA84D924D9B40200E7DF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84D824D9B40200E7DF49 /* AppDelegate.swift */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		005764DE9D8ECB83251E5F5E /* Pods_Amplify_iOS_Sampler_Amplify_iOS_SamplerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amplify_iOS_Sampler_Amplify_iOS_SamplerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		580FAFCB24DA7265002BBB6F /* LibraryFeatureListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryFeatureListViewController.swift; sourceTree = "<group>"; };
+		580FAFD224DAE750002BBB6F /* LibraryFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFeatures.swift; sourceTree = "<group>"; };
+		5856FBE724DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsRecordEventViewController.swift; sourceTree = "<group>"; };
+		5856FBEA24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFeatureViewConvertible.swift; sourceTree = "<group>"; };
+		5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnalyticsRecordEventViewController.storyboard; sourceTree = "<group>"; };
 		5892378424DA61A6002A59C3 /* definition.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = definition.json; sourceTree = "<group>"; };
 		5892378624DA6257002A59C3 /* SampleDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDefinition.swift; sourceTree = "<group>"; };
 		58DA84D524D9B40200E7DF49 /* Amplify-iOS-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amplify-iOS-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +122,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5892378324DA617B002A59C3 /* Samples */ = {
+		580FAFCD24DA7881002BBB6F /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				5856FBE724DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift */,
+				5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		5856FBE924DAEC9800C0C5C7 /* LibraryFeature */ = {
+			isa = PBXGroup;
+			children = (
+				580FAFCB24DA7265002BBB6F /* LibraryFeatureListViewController.swift */,
+				580FAFD224DAE750002BBB6F /* LibraryFeatures.swift */,
+				5856FBEA24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift */,
+			);
+			path = LibraryFeature;
+			sourceTree = "<group>";
+		};
+		5856FBEC24DAF0FF00C0C5C7 /* LibraryDefinition */ = {
 			isa = PBXGroup;
 			children = (
 				5892378424DA61A6002A59C3 /* definition.json */,
 				5892378624DA6257002A59C3 /* SampleDefinition.swift */,
+			);
+			path = LibraryDefinition;
+			sourceTree = "<group>";
+		};
+		5892378324DA617B002A59C3 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				580FAFCD24DA7881002BBB6F /* Analytics */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -151,8 +186,9 @@
 				58DA84D824D9B40200E7DF49 /* AppDelegate.swift */,
 				58DA84DA24D9B40200E7DF49 /* SceneDelegate.swift */,
 				58DA84DC24D9B40200E7DF49 /* RootViewController.swift */,
-				580FAFCB24DA7265002BBB6F /* LibraryFeatureListViewController.swift */,
 				58DA850824D9C37300E7DF49 /* Amplify */,
+				5856FBEC24DAF0FF00C0C5C7 /* LibraryDefinition */,
+				5856FBE924DAEC9800C0C5C7 /* LibraryFeature */,
 				5892378324DA617B002A59C3 /* Samples */,
 				58DA84DE24D9B40200E7DF49 /* Main.storyboard */,
 				58DA84E124D9B40600E7DF49 /* Assets.xcassets */,
@@ -314,6 +350,7 @@
 				58DA850C24D9C3B700E7DF49 /* amplifyconfiguration.json in Resources */,
 				58DA84E224D9B40600E7DF49 /* Assets.xcassets in Resources */,
 				58DA84E024D9B40200E7DF49 /* Main.storyboard in Resources */,
+				5856FBEE24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,11 +478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580FAFD324DAE750002BBB6F /* LibraryFeatures.swift in Sources */,
 				5892378724DA6257002A59C3 /* SampleDefinition.swift in Sources */,
 				58DA84DD24D9B40200E7DF49 /* RootViewController.swift in Sources */,
+				5856FBE824DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift in Sources */,
 				58DA84D924D9B40200E7DF49 /* AppDelegate.swift in Sources */,
 				58DA84DB24D9B40200E7DF49 /* SceneDelegate.swift in Sources */,
 				580FAFCC24DA7265002BBB6F /* LibraryFeatureListViewController.swift in Sources */,
+				5856FBEB24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
