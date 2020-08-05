@@ -1,4 +1,5 @@
 init:
+	bundle config set path 'vendor/bundle'
 	bundle install
 	bundle exec pod install
 setup-amplify-cli:
