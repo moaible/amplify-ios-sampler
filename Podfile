@@ -12,7 +12,6 @@ target 'Amplify-iOS-Sampler' do
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
 
   ##
-  pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
   pod 'AWSPredictionsPlugin'
   pod 'CoreMLPredictionsPlugin'
 

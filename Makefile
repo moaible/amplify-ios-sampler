@@ -1,13 +1,11 @@
 init:
 	bundle config set path 'vendor/bundle'
 	amplify pull
-install:
+install-frontend-lib:
 	bundle install
 	bundle exec pod install --repo-update
-setup-amplify-cli:
+setup-amplify:
 	npm install -g @aws-amplify/cli@4.26.0
 	amplify configure
-setup-amplify-analytics:
-	amplify add analytics
 deploy-backend:
 	amplify push
