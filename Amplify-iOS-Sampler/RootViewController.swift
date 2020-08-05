@@ -15,6 +15,7 @@ class RootViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
         tableView.register(
             UITableViewCell.self,
             forCellReuseIdentifier: identifier)
