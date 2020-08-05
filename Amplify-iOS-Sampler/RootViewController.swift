@@ -11,6 +11,8 @@ import Amplify
 
 class RootViewController: UITableViewController {
 
+    private var libraries: Array<AmplifyLibrary> = []
+
     private let identifier = "\(UITableViewCell.self)"
 
     override func viewDidLoad() {
@@ -19,8 +21,19 @@ class RootViewController: UITableViewController {
         tableView.register(
             UITableViewCell.self,
             forCellReuseIdentifier: identifier)
+        do {
+            self.libraries = try readSampleDefinition().libraries.filter({
+                $0.platforms.contains("ios")
+            })
+        } catch {
+            print("Failed read definition error: \(error)")
+        }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -28,14 +41,14 @@ class RootViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: identifier,
             for: indexPath)
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = self.libraries[indexPath.row].name
         return cell
     }
 
     override func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.libraries.count
     }
     
     override func tableView(
@@ -43,5 +56,24 @@ class RootViewController: UITableViewController {
         didSelectRowAt indexPath: IndexPath)
     {
         tableView.deselectRow(at: indexPath, animated: true)
+        let viewController = LibraryFeatureListViewController.instantiate(
+            library: self.libraries[indexPath.row])
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension RootViewController {
+
+    enum SampleDefinitionError: Error {
+        case cannotReadDefinition
+    }
+    
+    func readSampleDefinition() throws -> SampleDefinition {
+        guard let path = Bundle.main.path(forResource: "definition", ofType: "json") else {
+            throw SampleDefinitionError.cannotReadDefinition
+        }
+        let url = URL(fileURLWithPath: path)
+        let definitionData = try Data(contentsOf: url)
+        return try JSONDecoder().decode(SampleDefinition.self, from: definitionData)
     }
 }

@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Amplify Libraries-->
         <scene sceneID="kZQ-d9-G2K">
             <objects>
                 <tableViewController id="1dg-Yo-HvW" customClass="RootViewController" customModule="Amplify_iOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                             <outlet property="delegate" destination="1dg-Yo-HvW" id="wqh-dm-lFe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="4Gk-M5-nHV"/>
+                    <navigationItem key="navigationItem" title="Amplify Libraries" id="4Gk-M5-nHV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFG-Ta-YZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

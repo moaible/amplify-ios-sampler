@@ -2,6 +2,7 @@
   "libraries": [
     {
       "name": "Analytics",
+      "prefix": "Analytics",
       "platforms": [
         "javascript",
         "ios",
@@ -10,6 +11,7 @@
     },
     {
       "name": "GraphQL API",
+      "prefix": "GraphQL",
       "platforms": [
         "javascript",
         "ios",
@@ -17,7 +19,8 @@
       ]
     },
     {
-      "name": "Rest API",
+      "name": "REST API",
+      "prefix": "REST",
       "platforms": [
         "javascript",
         "ios",
@@ -26,6 +29,7 @@
     },
     {
       "name": "Auth",
+      "prefix": "Auth",
       "platforms": [
         "javascript",
         "ios",
@@ -34,6 +38,7 @@
     },
     {
       "name": "Data Store",
+      "prefix": "DataStore",
       "platforms": [
         "javascript",
         "ios",
@@ -42,12 +47,14 @@
     },
     {
       "name": "Interactions",
+      "prefix": "Interactions",
       "platforms": [
         "javascript"
       ]
     },
     {
       "name": "Predictions",
+      "prefix": "Predictions",
       "platforms": [
         "javascript",
         "ios",
@@ -56,18 +63,21 @@
     },
     {
       "name": "Pub Sub",
+      "prefix": "PubSub",
       "platforms": [
         "javascript"
       ]
     },
     {
       "name": "Push Notifications",
+      "prefix": "PushNotifications",
       "platforms": [
         "javascript"
       ]
     },
     {
       "name": "Storage",
+      "prefix": "Storage",
       "platforms": [
         "javascript",
         "ios",
@@ -76,6 +86,7 @@
     },
     {
       "name": "XR",
+      "prefix": "XR",
       "platforms": [
         "javascript"
       ]
