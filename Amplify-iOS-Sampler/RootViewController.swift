@@ -24,6 +24,7 @@ class RootViewController: UITableViewController {
         do {
             self.libraries = try readSampleDefinition().libraries.filter({
                 $0.platforms.contains("ios")
+                    && AmplifyLibraryType(rawValue: $0.prefix) != nil
             })
         } catch {
             print("Failed read definition error: \(error)")
