@@ -1,1 +1,14 @@
-{}
+{
+	"auth": {
+		"cognito167149cf": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"amplifyiossampler": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
