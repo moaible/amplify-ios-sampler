@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Amplify
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        do {
+            try Amplify.configure()
+            Amplify.Logging.logLevel = .verbose
+        } catch {
+            print("amplify configuration failed: \(error)")
+        }
         return true
     }
 
