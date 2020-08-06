@@ -243,6 +243,7 @@
 			buildConfigurationList = 58DA84FF24D9B40600E7DF49 /* Build configuration list for PBXNativeTarget "Amplify-iOS-Sampler" */;
 			buildPhases = (
 				0745D26B2A5FEE48A257FF17 /* [CP] Check Pods Manifest.lock */,
+				58B321D424DBD21E0039D71C /* Run Amplify Tools */,
 				58DA84D124D9B40200E7DF49 /* Sources */,
 				58DA84D224D9B40200E7DF49 /* Frameworks */,
 				58DA84D324D9B40200E7DF49 /* Resources */,
@@ -448,6 +449,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		58B321D424DBD21E0039D71C /* Run Amplify Tools */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Amplify Tools";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
 		};
 		7D29BFC06C06C0E6134C191F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

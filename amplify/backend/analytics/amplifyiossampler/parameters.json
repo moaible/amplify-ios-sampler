@@ -1,11 +1,11 @@
 {
     "appName": "amplifyiossampler",
-    "roleName": "pinpointLambdaRole8a20ce86",
-    "cloudformationPolicyName": "cloudformationPolicy8a20ce86",
-    "cloudWatchPolicyName": "cloudWatchPolicy8a20ce86",
-    "pinpointPolicyName": "pinpointPolicy8a20ce86",
-    "authPolicyName": "pinpoint_amplify_8a20ce86",
-    "unauthPolicyName": "pinpoint_amplify_8a20ce86",
+    "roleName": "pinpointLambdaRoleca761ea5",
+    "cloudformationPolicyName": "cloudformationPolicyca761ea5",
+    "cloudWatchPolicyName": "cloudWatchPolicyca761ea5",
+    "pinpointPolicyName": "pinpointPolicyca761ea5",
+    "authPolicyName": "pinpoint_amplify_ca761ea5",
+    "unauthPolicyName": "pinpoint_amplify_ca761ea5",
     "authRoleName": {
         "Ref": "AuthRoleName"
     },
