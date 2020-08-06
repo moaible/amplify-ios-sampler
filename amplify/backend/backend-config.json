@@ -1,15 +1,14 @@
 {
-    "auth": {
-        "cognito7e77afd3": {
-            "service": "Cognito",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": []
-        }
-    },
-    "analytics": {
-        "amplifyiossampler": {
-            "service": "Pinpoint",
-            "providerPlugin": "awscloudformation"
-        }
-    }
+	"auth": {
+		"cognitof43f6713": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"amplifyiossampler": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
 }
