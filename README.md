@@ -21,7 +21,7 @@ Code examples for Amplify Libraries of iOS 13
 
 - Xcode 11
 - iOS 13.6
-- Amplify iOS (1.0.2)
+- Amplify iOS (1.0.6)
 
 ## Usage
 
