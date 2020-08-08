@@ -2,7 +2,7 @@ projects:
   amplifyiossampler:
     schemaPath: graphql/schema.json
     includes:
-      - graphql/**/*.graphql
+      - ''
     excludes:
       - ./amplify/**
     extensions:
