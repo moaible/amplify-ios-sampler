@@ -101,15 +101,22 @@
                                     <constraint firstAttribute="height" constant="64" id="tiN-rV-B4O"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jy5-Ai-fTH">
+                                <rect key="frame" x="0.0" y="289" width="414" height="453"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Jy5-Ai-fTH" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="7Ya-HT-OdW"/>
                             <constraint firstItem="hdr-F7-xUo" firstAttribute="width" secondItem="rSj-6o-23N" secondAttribute="width" id="9MW-4T-u93"/>
                             <constraint firstItem="rSj-6o-23N" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="K85-vr-OuZ"/>
                             <constraint firstItem="hdr-F7-xUo" firstAttribute="top" secondItem="rSj-6o-23N" secondAttribute="bottom" constant="29" id="P4h-Zv-jR3"/>
                             <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="hdr-F7-xUo" secondAttribute="trailing" id="T38-df-UpO"/>
                             <constraint firstItem="rSj-6o-23N" firstAttribute="top" secondItem="tXQ-wg-8S9" secondAttribute="top" id="T8w-nv-LvA"/>
                             <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="dAa-cu-2tu" secondAttribute="trailing" constant="16" id="U67-kW-7Np"/>
+                            <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="Jy5-Ai-fTH" secondAttribute="trailing" id="Xgj-vW-EWu"/>
+                            <constraint firstItem="Jy5-Ai-fTH" firstAttribute="top" secondItem="dAa-cu-2tu" secondAttribute="bottom" constant="32" id="aW3-Xp-0cO"/>
                             <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="rSj-6o-23N" secondAttribute="trailing" id="hCs-SJ-BSQ"/>
                             <constraint firstItem="dAa-cu-2tu" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" constant="16" id="ptd-Mw-ohr"/>
                             <constraint firstItem="nFN-eH-5QC" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="rW3-wf-y9F"/>
@@ -117,6 +124,7 @@
                             <constraint firstItem="tXQ-wg-8S9" firstAttribute="bottom" secondItem="nFN-eH-5QC" secondAttribute="bottom" constant="24" id="tCu-pp-KNm"/>
                             <constraint firstItem="hdr-F7-xUo" firstAttribute="leading" secondItem="tXQ-wg-8S9" secondAttribute="leading" id="uRi-Xd-rOl"/>
                             <constraint firstItem="tXQ-wg-8S9" firstAttribute="trailing" secondItem="nFN-eH-5QC" secondAttribute="trailing" id="uZJ-LQ-BJ9"/>
+                            <constraint firstItem="nFN-eH-5QC" firstAttribute="top" secondItem="Jy5-Ai-fTH" secondAttribute="bottom" constant="32" id="ybn-4f-J44"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tXQ-wg-8S9"/>
                     </view>
@@ -124,6 +132,7 @@
                         <outlet property="analyticsEnabledSwitch" destination="1ET-bc-Bi3" id="Dy9-0k-q2t"/>
                         <outlet property="eventNameField" destination="dAa-cu-2tu" id="dpA-oI-maU"/>
                         <outlet property="recordEventButton" destination="lB3-eP-xWU" id="zGq-0h-8ba"/>
+                        <outlet property="tableView" destination="Jy5-Ai-fTH" id="eqk-xw-5d2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGJ-f0-51d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

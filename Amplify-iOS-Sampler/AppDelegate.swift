@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
             }
             try Amplify.configure()
+            print(Date().description)
+            
+            GlobalAnalyticsPropertyStore.shared.add(forKey: "LaunchDate", value: Date().description)
         } catch {
             print("amplify configuration failed: \(error)")
         }

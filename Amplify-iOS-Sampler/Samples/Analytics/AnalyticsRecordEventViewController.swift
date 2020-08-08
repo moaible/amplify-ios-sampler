@@ -15,22 +15,34 @@ class AnalyticsRecordEventViewController: UIViewController, LibraryFeatureViewCo
     @IBOutlet weak var analyticsEnabledSwitch: UISwitch!
     @IBOutlet weak var eventNameField: UITextField!
     @IBOutlet weak var recordEventButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
+    
+    private let cellIdentifier = "\(UITableViewCell.self)"
+    
+    var analyticsProperties: AnalyticsProperties = [
+        "eventPropertyStringKey": "eventPropertyStringValue",
+        "eventPropertyIntKey": 123,
+        "eventPropertyDoubleKey": 12.34,
+        "eventPropertyBoolKey": true
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         analyticsEnabledSwitch.setOn(true, animated: false)
         enableAnalyticsSwitch(isEnabled: true)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         eventNameField.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        recordEvents(name: "show")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        recordEvents(name: "close")
     }
     
     @IBAction func changeAnalyticsEnableSwitch(_ sender: UISwitch) {
@@ -45,20 +57,31 @@ class AnalyticsRecordEventViewController: UIViewController, LibraryFeatureViewCo
     
     private func enableAnalyticsSwitch(isEnabled: Bool) {
         isEnabled ? Amplify.Analytics.enable() : Amplify.Analytics.disable()
-//        eventNameField.isEnabled = isEnabled
-//        recordEventButton.isEnabled = isEnabled
     }
 
     func recordEvents(name: String) {
-        let properties: AnalyticsProperties = [
-            "eventPropertyStringKey": "eventPropertyStringValue",
-            "eventPropertyIntKey": 123,
-            "eventPropertyDoubleKey": 12.34,
-            "eventPropertyBoolKey": true
-        ]
         Amplify.Analytics.record(event:
-            BasicAnalyticsEvent(name: name, properties: properties))
+            BasicAnalyticsEvent(name: name, properties: self.analyticsProperties))
         eventNameField.text = nil
+    }
+}
+
+extension AnalyticsRecordEventViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return analyticsProperties.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let key = Array(analyticsProperties.keys)[indexPath.row]
+        let property = analyticsProperties[key] ?? ""
+        cell.textLabel?.text = "\(key): \(property)"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

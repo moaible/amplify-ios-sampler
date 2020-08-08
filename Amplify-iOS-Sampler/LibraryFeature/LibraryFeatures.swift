@@ -20,7 +20,8 @@ func libraryFeatures(libraryPrefix: String) -> [String] {
     switch type {
     case .analytics:
         return [
-            "RecordEvent"
+            "RecordEvent",
+            "GlobalProperties"
         ]
     }
 }

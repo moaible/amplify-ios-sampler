@@ -13,7 +13,7 @@ class LibraryFeatureListViewController: UITableViewController {
 
     private var library: AmplifyLibrary!
     private var features: [String] = []
-    private let identifier = "\(UITableViewCell.self)"
+    private let cellIdentifier = "\(UITableViewCell.self)"
 
     convenience init() {
         self.init(nibName: nil, bundle: nil)
@@ -39,7 +39,7 @@ class LibraryFeatureListViewController: UITableViewController {
         self.title = library?.name
         tableView.register(
             UITableViewCell.self,
-            forCellReuseIdentifier: identifier)
+            forCellReuseIdentifier: cellIdentifier)
     }
     
     override func tableView(
@@ -47,7 +47,7 @@ class LibraryFeatureListViewController: UITableViewController {
         cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: identifier,
+            withIdentifier: cellIdentifier,
             for: indexPath)
         cell.textLabel?.text = self.features[indexPath.row]
         return cell
