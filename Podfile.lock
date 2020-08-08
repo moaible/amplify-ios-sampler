@@ -3,6 +3,12 @@ PODS:
     - Amplify/Default (= 1.0.6)
   - Amplify/Default (1.0.6)
   - Amplify/Tools (1.0.6)
+  - AmplifyPlugins/AWSAPIPlugin (1.0.6):
+    - AppSyncRealTimeClient (~> 1.4.0)
+    - AWSAuthCore (~> 2.15.0)
+    - AWSCore (~> 2.15.0)
+    - AWSPluginsCore (= 1.0.6)
+    - ReachabilitySwift (~> 5.0.0)
   - AmplifyPlugins/AWSCognitoAuthPlugin (1.0.6):
     - AWSAuthCore (~> 2.15.0)
     - AWSCore (~> 2.15.0)
@@ -13,6 +19,8 @@ PODS:
     - AWSCore (~> 2.15.0)
     - AWSPinpoint (~> 2.15.0)
     - AWSPluginsCore (= 1.0.6)
+  - AppSyncRealTimeClient (1.4.0):
+    - Starscream (~> 3.1.0)
   - AWSAuthCore (2.15.0):
     - AWSCore (= 2.15.0)
   - AWSCognitoIdentityProvider (2.15.0):
@@ -53,10 +61,13 @@ PODS:
     - AWSCore (= 2.15.0)
   - CoreMLPredictionsPlugin (1.0.6):
     - Amplify (= 1.0.6)
+  - ReachabilitySwift (5.0.0)
+  - Starscream (3.1.1)
 
 DEPENDENCIES:
   - Amplify (= 1.0.6)
   - Amplify/Tools
+  - AmplifyPlugins/AWSAPIPlugin
   - AmplifyPlugins/AWSCognitoAuthPlugin
   - AmplifyPlugins/AWSPinpointAnalyticsPlugin
   - AWSPredictionsPlugin
@@ -66,6 +77,7 @@ SPEC REPOS:
   trunk:
     - Amplify
     - AmplifyPlugins
+    - AppSyncRealTimeClient
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
@@ -81,10 +93,13 @@ SPEC REPOS:
     - AWSTranscribeStreaming
     - AWSTranslate
     - CoreMLPredictionsPlugin
+    - ReachabilitySwift
+    - Starscream
 
 SPEC CHECKSUMS:
   Amplify: e07bbe2b0bbeeec2b36470a842e59c98d0b7effa
   AmplifyPlugins: 6e3000faae927e45279b0198a531fbb91554efc6
+  AppSyncRealTimeClient: 1e14f5584218e63b00fffbc093ad1934701a4b68
   AWSAuthCore: 284f1bc07187fad68ba52a0af088fe84f7af538e
   AWSCognitoIdentityProvider: 451b1a39c5c73afa9fc2bf8d29cb0892e9b3b34c
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
@@ -100,7 +115,9 @@ SPEC CHECKSUMS:
   AWSTranscribeStreaming: fb7ebae52697b22446c5f3d53ae69cc0f8645675
   AWSTranslate: b342d8f7f0005805423bb60b83619376ad011350
   CoreMLPredictionsPlugin: 468f218dbbb85379623502d0809b2b4d2cf5a0f0
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: 69894431dcf44ea1f2074180b424ff5b29ba5392
+PODFILE CHECKSUM: 02578cefbc9e6fc8afc93472e314eae5f9ca02a9
 
 COCOAPODS: 1.9.3
