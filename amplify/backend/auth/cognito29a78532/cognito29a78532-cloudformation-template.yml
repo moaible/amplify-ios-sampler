@@ -36,7 +36,7 @@ Resources:
   # Always created
     Type: AWS::Cognito::IdentityPool
     Properties: 
-      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'amplifyiossampler_identitypool_b4f6b87a', !Join ['',['amplifyiossampler_identitypool_b4f6b87a', '__', !Ref env]]]
+      IdentityPoolName: !If [ShouldNotCreateEnvResources, 'amplifyiossampler_identitypool_7d6e5b67', !Join ['',['amplifyiossampler_identitypool_7d6e5b67', '__', !Ref env]]]
             
       AllowUnauthenticatedIdentities: !Ref allowUnauthenticatedIdentities
        

@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"cognitof43f6713": {
+		"cognito29a78532": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation"
 		}
@@ -9,6 +9,20 @@
 		"amplifyiossampler": {
 			"service": "Pinpoint",
 			"providerPlugin": "awscloudformation"
+		}
+	},
+	"api": {
+		"amplifyiossampler": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"defaultAuthentication": {
+						"authenticationType": "AWS_IAM"
+					},
+					"additionalAuthenticationProviders": []
+				}
+			}
 		}
 	}
 }
