@@ -10,9 +10,9 @@ import Foundation
 import Amplify
 import AmplifyPlugins
 
-struct GlobalAnalyticsPropertyStore {
+struct InMemoryGlobalProperties {
     private var data: AnalyticsProperties = [:]
-    static var shared: GlobalAnalyticsPropertyStore = GlobalAnalyticsPropertyStore()
+    static var shared: InMemoryGlobalProperties = InMemoryGlobalProperties()
     private init() {}
 
     var keys: [Dictionary<String, AnalyticsPropertyValue>.Keys.Element] {
@@ -25,19 +25,22 @@ struct GlobalAnalyticsPropertyStore {
     
     mutating func add(forKey key: String, value: AnalyticsPropertyValue) {
         self.data[key] = value
+        Amplify.Analytics.registerGlobalProperties([key : value])
     }
     
     mutating func delete(forKey keys: [String]) {
         keys.forEach({ (key) in
-            self.data.removeValue(forKey: key)
+            self.delete(forKey: key)
         })
     }
     
     mutating func delete(forKey key: String) {
         self.data.removeValue(forKey: key)
+        Amplify.Analytics.unregisterGlobalProperties([key])
     }
     
     mutating func deleteAll() {
         self.data = [:]
+        Amplify.Analytics.unregisterGlobalProperties()
     }
 }

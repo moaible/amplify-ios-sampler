@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try Amplify.configure()
             print(Date().description)
             
-            GlobalAnalyticsPropertyStore.shared.add(forKey: "LaunchDate", value: Date().description)
+            InMemoryGlobalProperties.shared.add(forKey: "LaunchDate", value: Date().description)
         } catch {
             print("amplify configuration failed: \(error)")
         }

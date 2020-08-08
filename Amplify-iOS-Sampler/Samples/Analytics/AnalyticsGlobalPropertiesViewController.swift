@@ -23,32 +23,29 @@ class AnalyticsGlobalPropertiesViewController: UIViewController, LibraryFeatureV
 
     func addGlobalProperties(properties: AnalyticsProperties) {
         properties.forEach { (key, value) in
-            GlobalAnalyticsPropertyStore.shared.add(forKey: key, value: value)
+            InMemoryGlobalProperties.shared.add(forKey: key, value: value)
         }
-        Amplify.Analytics.registerGlobalProperties(properties)
     }
     
     func deleteGlobalProperty(key: String) {
-        GlobalAnalyticsPropertyStore.shared.delete(forKey: key)
-        Amplify.Analytics.unregisterGlobalProperties([key])
+        InMemoryGlobalProperties.shared.delete(forKey: key)
     }
     
     func deleteAllGlobalProperties() {
-        GlobalAnalyticsPropertyStore.shared.deleteAll()
-        Amplify.Analytics.unregisterGlobalProperties()
+        InMemoryGlobalProperties.shared.deleteAll()
     }
 }
 
 extension AnalyticsGlobalPropertiesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return GlobalAnalyticsPropertyStore.shared.properties.count
+        return InMemoryGlobalProperties.shared.properties.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        let key = GlobalAnalyticsPropertyStore.shared.keys[indexPath.row]
-        guard let property = GlobalAnalyticsPropertyStore.shared.properties[key] else {
+        let key = InMemoryGlobalProperties.shared.keys[indexPath.row]
+        guard let property = InMemoryGlobalProperties.shared.properties[key] else {
             fatalError()
         }
         cell.textLabel?.text = "\(key): \(property)"
