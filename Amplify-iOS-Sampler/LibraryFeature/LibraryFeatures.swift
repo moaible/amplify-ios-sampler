@@ -11,6 +11,7 @@ import UIKit
 
 enum AmplifyLibraryType: String {
     case analytics = "Analytics"
+    case graphql = "GraphQL"
 }
 
 func libraryFeatures(libraryPrefix: String) -> [String] {
@@ -22,6 +23,12 @@ func libraryFeatures(libraryPrefix: String) -> [String] {
         return [
             "RecordEvent",
             "GlobalProperties"
+        ]
+    case .graphql:
+        return [
+            "Query",
+            "Mutation",
+            "Subscription"
         ]
     }
 }

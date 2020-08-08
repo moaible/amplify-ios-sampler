@@ -15,6 +15,12 @@
 		5818625F24DED7EE00B47312 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818625C24DED7EE00B47312 /* AmplifyModels.swift */; };
 		5818626024DED7EE00B47312 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818625D24DED7EE00B47312 /* Todo.swift */; };
 		5818626124DED7EE00B47312 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818625E24DED7EE00B47312 /* Todo+Schema.swift */; };
+		5818626D24DEE25A00B47312 /* GraphQLQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */; };
+		5818626E24DEE25A00B47312 /* GraphQLMutationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */; };
+		5818626F24DEE25A00B47312 /* GraphQLMutationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */; };
+		5818627024DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */; };
+		5818627124DEE25A00B47312 /* GraphQLSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626B24DEE25A00B47312 /* GraphQLSubscriptionViewController.swift */; };
+		5818627224DEE25A00B47312 /* GraphQLQueryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */; };
 		5856FBE824DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856FBE724DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift */; };
 		5856FBEB24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856FBEA24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift */; };
 		5856FBEE24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */; };
@@ -64,6 +70,12 @@
 		5818625C24DED7EE00B47312 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		5818625D24DED7EE00B47312 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		5818625E24DED7EE00B47312 /* Todo+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+Schema.swift"; sourceTree = "<group>"; };
+		5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLQueryViewController.swift; sourceTree = "<group>"; };
+		5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLMutationViewController.swift; sourceTree = "<group>"; };
+		5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLMutationViewController.storyboard; sourceTree = "<group>"; };
+		5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLSubscriptionViewController.storyboard; sourceTree = "<group>"; };
+		5818626B24DEE25A00B47312 /* GraphQLSubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLSubscriptionViewController.swift; sourceTree = "<group>"; };
+		5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLQueryViewController.storyboard; sourceTree = "<group>"; };
 		5856FBE724DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsRecordEventViewController.swift; sourceTree = "<group>"; };
 		5856FBEA24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFeatureViewConvertible.swift; sourceTree = "<group>"; };
 		5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnalyticsRecordEventViewController.storyboard; sourceTree = "<group>"; };
@@ -187,6 +199,19 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		5818626224DEE09800B47312 /* GraphQL API */ = {
+			isa = PBXGroup;
+			children = (
+				5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */,
+				5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */,
+				5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */,
+				5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */,
+				5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */,
+				5818626B24DEE25A00B47312 /* GraphQLSubscriptionViewController.swift */,
+			);
+			path = "GraphQL API";
+			sourceTree = "<group>";
+		};
 		5856FBE924DAEC9800C0C5C7 /* LibraryFeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +234,7 @@
 		5892378324DA617B002A59C3 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				5818626224DEE09800B47312 /* GraphQL API */,
 				580FAFCD24DA7881002BBB6F /* Analytics */,
 			);
 			path = Samples;
@@ -406,7 +432,10 @@
 				5818624D24DE547D00B47312 /* AnalyticsPropertiesCell.xib in Resources */,
 				58DA84E524D9B40600E7DF49 /* LaunchScreen.storyboard in Resources */,
 				5892378524DA61A6002A59C3 /* definition.json in Resources */,
+				5818627224DEE25A00B47312 /* GraphQLQueryViewController.storyboard in Resources */,
 				58DA850C24D9C3B700E7DF49 /* amplifyconfiguration.json in Resources */,
+				5818627024DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard in Resources */,
+				5818626F24DEE25A00B47312 /* GraphQLMutationViewController.storyboard in Resources */,
 				58DA84E224D9B40600E7DF49 /* Assets.xcassets in Resources */,
 				58DA84E024D9B40200E7DF49 /* Main.storyboard in Resources */,
 				58B321D824DBF0B90039D71C /* AnalyticsGlobalPropertiesViewController.storyboard in Resources */,
@@ -562,13 +591,16 @@
 				5892378724DA6257002A59C3 /* SampleDefinition.swift in Sources */,
 				58DA84DD24D9B40200E7DF49 /* RootViewController.swift in Sources */,
 				5818625F24DED7EE00B47312 /* AmplifyModels.swift in Sources */,
+				5818627124DEE25A00B47312 /* GraphQLSubscriptionViewController.swift in Sources */,
 				5818624824DE535100B47312 /* InMemoryGlobalProperties.swift in Sources */,
 				5856FBE824DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift in Sources */,
 				58B321D624DBF0B00039D71C /* AnalyticsGlobalPropertiesViewController.swift in Sources */,
 				58DA84D924D9B40200E7DF49 /* AppDelegate.swift in Sources */,
 				58DA84DB24D9B40200E7DF49 /* SceneDelegate.swift in Sources */,
 				580FAFCC24DA7265002BBB6F /* LibraryFeatureListViewController.swift in Sources */,
+				5818626E24DEE25A00B47312 /* GraphQLMutationViewController.swift in Sources */,
 				5818626024DED7EE00B47312 /* Todo.swift in Sources */,
+				5818626D24DEE25A00B47312 /* GraphQLQueryViewController.swift in Sources */,
 				5856FBEB24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
