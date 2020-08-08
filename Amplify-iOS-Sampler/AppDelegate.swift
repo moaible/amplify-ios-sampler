@@ -16,9 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         do {
             Amplify.Logging.logLevel = .verbose
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
             do { // Analytics
-                try Amplify.add(plugin: AWSCognitoAuthPlugin())
                 try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
+            }
+            do { // API
+                try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: AmplifyModels()))
             }
             try Amplify.configure()
             print(Date().description)
