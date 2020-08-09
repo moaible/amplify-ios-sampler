@@ -554,7 +554,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+			shellScript = "#\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
 		};
 		7D29BFC06C06C0E6134C191F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

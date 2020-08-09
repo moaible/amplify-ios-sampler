@@ -6,7 +6,7 @@ target 'Amplify-iOS-Sampler' do
 
   # Pods for Amplify-iOS-Sampler
   pod 'Amplify', '1.0.6'
-  pod 'Amplify/Tools'
+#  pod 'Amplify/Tools'
 
   ## Analytics
   pod 'AmplifyPlugins/AWSPinpointAnalyticsPlugin'

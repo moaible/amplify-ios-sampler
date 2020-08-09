@@ -2,7 +2,6 @@ PODS:
   - Amplify (1.0.6):
     - Amplify/Default (= 1.0.6)
   - Amplify/Default (1.0.6)
-  - Amplify/Tools (1.0.6)
   - AmplifyPlugins/AWSAPIPlugin (1.0.6):
     - AppSyncRealTimeClient (~> 1.4.0)
     - AWSAuthCore (~> 2.15.0)
@@ -66,7 +65,6 @@ PODS:
 
 DEPENDENCIES:
   - Amplify (= 1.0.6)
-  - Amplify/Tools
   - AmplifyPlugins/AWSAPIPlugin
   - AmplifyPlugins/AWSCognitoAuthPlugin
   - AmplifyPlugins/AWSPinpointAnalyticsPlugin
@@ -118,6 +116,6 @@ SPEC CHECKSUMS:
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: 02578cefbc9e6fc8afc93472e314eae5f9ca02a9
+PODFILE CHECKSUM: a19fb3d0a0817523ea8fff48bec685a4d628fd1f
 
 COCOAPODS: 1.9.3
