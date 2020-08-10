@@ -12,9 +12,6 @@
 		5818624824DE535100B47312 /* InMemoryGlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818624724DE535100B47312 /* InMemoryGlobalProperties.swift */; };
 		5818624C24DE547D00B47312 /* AnalyticsPropertiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818624A24DE547D00B47312 /* AnalyticsPropertiesCell.swift */; };
 		5818624D24DE547D00B47312 /* AnalyticsPropertiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5818624B24DE547D00B47312 /* AnalyticsPropertiesCell.xib */; };
-		5818625F24DED7EE00B47312 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818625C24DED7EE00B47312 /* AmplifyModels.swift */; };
-		5818626024DED7EE00B47312 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818625D24DED7EE00B47312 /* Todo.swift */; };
-		5818626124DED7EE00B47312 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818625E24DED7EE00B47312 /* Todo+Schema.swift */; };
 		5818626D24DEE25A00B47312 /* GraphQLQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */; };
 		5818626E24DEE25A00B47312 /* GraphQLMutationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */; };
 		5818626F24DEE25A00B47312 /* GraphQLMutationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */; };
@@ -26,6 +23,10 @@
 		5856FBEE24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */; };
 		5892378524DA61A6002A59C3 /* definition.json in Resources */ = {isa = PBXBuildFile; fileRef = 5892378424DA61A6002A59C3 /* definition.json */; };
 		5892378724DA6257002A59C3 /* SampleDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5892378624DA6257002A59C3 /* SampleDefinition.swift */; };
+		58A6319624DFCF7C00A95BB0 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A6319324DFCF7C00A95BB0 /* AmplifyModels.swift */; };
+		58A6319724DFCF7C00A95BB0 /* Todo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A6319424DFCF7C00A95BB0 /* Todo+Schema.swift */; };
+		58A6319824DFCF7C00A95BB0 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A6319524DFCF7C00A95BB0 /* Todo.swift */; };
+		58A6319B24E0611E00A95BB0 /* Promise+AmplifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A6319A24E0611D00A95BB0 /* Promise+AmplifyAPI.swift */; };
 		58B321D624DBF0B00039D71C /* AnalyticsGlobalPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B321D524DBF0B00039D71C /* AnalyticsGlobalPropertiesViewController.swift */; };
 		58B321D824DBF0B90039D71C /* AnalyticsGlobalPropertiesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B321D724DBF0B90039D71C /* AnalyticsGlobalPropertiesViewController.storyboard */; };
 		58DA84D924D9B40200E7DF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA84D824D9B40200E7DF49 /* AppDelegate.swift */; };
@@ -67,9 +68,6 @@
 		5818624724DE535100B47312 /* InMemoryGlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryGlobalProperties.swift; sourceTree = "<group>"; };
 		5818624A24DE547D00B47312 /* AnalyticsPropertiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsPropertiesCell.swift; sourceTree = "<group>"; };
 		5818624B24DE547D00B47312 /* AnalyticsPropertiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalyticsPropertiesCell.xib; sourceTree = "<group>"; };
-		5818625C24DED7EE00B47312 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
-		5818625D24DED7EE00B47312 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		5818625E24DED7EE00B47312 /* Todo+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+Schema.swift"; sourceTree = "<group>"; };
 		5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLQueryViewController.swift; sourceTree = "<group>"; };
 		5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLMutationViewController.swift; sourceTree = "<group>"; };
 		5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLMutationViewController.storyboard; sourceTree = "<group>"; };
@@ -81,6 +79,10 @@
 		5856FBED24DAF21100C0C5C7 /* AnalyticsRecordEventViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnalyticsRecordEventViewController.storyboard; sourceTree = "<group>"; };
 		5892378424DA61A6002A59C3 /* definition.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = definition.json; sourceTree = "<group>"; };
 		5892378624DA6257002A59C3 /* SampleDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDefinition.swift; sourceTree = "<group>"; };
+		58A6319324DFCF7C00A95BB0 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		58A6319424DFCF7C00A95BB0 /* Todo+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+Schema.swift"; sourceTree = "<group>"; };
+		58A6319524DFCF7C00A95BB0 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		58A6319A24E0611D00A95BB0 /* Promise+AmplifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+AmplifyAPI.swift"; sourceTree = "<group>"; };
 		58B321D524DBF0B00039D71C /* AnalyticsGlobalPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsGlobalPropertiesViewController.swift; sourceTree = "<group>"; };
 		58B321D724DBF0B90039D71C /* AnalyticsGlobalPropertiesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnalyticsGlobalPropertiesViewController.storyboard; sourceTree = "<group>"; };
 		58DA84D524D9B40200E7DF49 /* Amplify-iOS-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amplify-iOS-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,9 +194,9 @@
 		5818625B24DED7EE00B47312 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				5818625C24DED7EE00B47312 /* AmplifyModels.swift */,
-				5818625D24DED7EE00B47312 /* Todo.swift */,
-				5818625E24DED7EE00B47312 /* Todo+Schema.swift */,
+				58A6319324DFCF7C00A95BB0 /* AmplifyModels.swift */,
+				58A6319524DFCF7C00A95BB0 /* Todo.swift */,
+				58A6319424DFCF7C00A95BB0 /* Todo+Schema.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -204,6 +206,7 @@
 			children = (
 				5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */,
 				5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */,
+				58A6319924E0610100A95BB0 /* Wrapper */,
 				5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */,
 				5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */,
 				5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */,
@@ -238,6 +241,14 @@
 				580FAFCD24DA7881002BBB6F /* Analytics */,
 			);
 			path = Samples;
+			sourceTree = "<group>";
+		};
+		58A6319924E0610100A95BB0 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				58A6319A24E0611D00A95BB0 /* Promise+AmplifyAPI.swift */,
+			);
+			path = Wrapper;
 			sourceTree = "<group>";
 		};
 		58DA84CC24D9B40100E7DF49 = {
@@ -585,12 +596,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5818626124DED7EE00B47312 /* Todo+Schema.swift in Sources */,
 				5818624C24DE547D00B47312 /* AnalyticsPropertiesCell.swift in Sources */,
+				58A6319724DFCF7C00A95BB0 /* Todo+Schema.swift in Sources */,
 				580FAFD324DAE750002BBB6F /* LibraryFeatures.swift in Sources */,
 				5892378724DA6257002A59C3 /* SampleDefinition.swift in Sources */,
+				58A6319624DFCF7C00A95BB0 /* AmplifyModels.swift in Sources */,
 				58DA84DD24D9B40200E7DF49 /* RootViewController.swift in Sources */,
-				5818625F24DED7EE00B47312 /* AmplifyModels.swift in Sources */,
 				5818627124DEE25A00B47312 /* GraphQLSubscriptionViewController.swift in Sources */,
 				5818624824DE535100B47312 /* InMemoryGlobalProperties.swift in Sources */,
 				5856FBE824DAEB4200C0C5C7 /* AnalyticsRecordEventViewController.swift in Sources */,
@@ -599,9 +610,10 @@
 				58DA84DB24D9B40200E7DF49 /* SceneDelegate.swift in Sources */,
 				580FAFCC24DA7265002BBB6F /* LibraryFeatureListViewController.swift in Sources */,
 				5818626E24DEE25A00B47312 /* GraphQLMutationViewController.swift in Sources */,
-				5818626024DED7EE00B47312 /* Todo.swift in Sources */,
 				5818626D24DEE25A00B47312 /* GraphQLQueryViewController.swift in Sources */,
+				58A6319B24E0611E00A95BB0 /* Promise+AmplifyAPI.swift in Sources */,
 				5856FBEB24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift in Sources */,
+				58A6319824DFCF7C00A95BB0 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
