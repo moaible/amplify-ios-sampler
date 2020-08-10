@@ -14,6 +14,8 @@ target 'Amplify-iOS-Sampler' do
   
   ## API
   pod 'AmplifyPlugins/AWSAPIPlugin'
+  ### Support
+  pod 'HydraAsync'
   
   ##
   pod 'AWSPredictionsPlugin'

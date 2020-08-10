@@ -60,6 +60,7 @@ PODS:
     - AWSCore (= 2.15.0)
   - CoreMLPredictionsPlugin (1.0.6):
     - Amplify (= 1.0.6)
+  - HydraAsync (2.0.3)
   - ReachabilitySwift (5.0.0)
   - Starscream (3.1.1)
 
@@ -70,6 +71,7 @@ DEPENDENCIES:
   - AmplifyPlugins/AWSPinpointAnalyticsPlugin
   - AWSPredictionsPlugin
   - CoreMLPredictionsPlugin
+  - HydraAsync
 
 SPEC REPOS:
   trunk:
@@ -91,6 +93,7 @@ SPEC REPOS:
     - AWSTranscribeStreaming
     - AWSTranslate
     - CoreMLPredictionsPlugin
+    - HydraAsync
     - ReachabilitySwift
     - Starscream
 
@@ -113,9 +116,10 @@ SPEC CHECKSUMS:
   AWSTranscribeStreaming: fb7ebae52697b22446c5f3d53ae69cc0f8645675
   AWSTranslate: b342d8f7f0005805423bb60b83619376ad011350
   CoreMLPredictionsPlugin: 468f218dbbb85379623502d0809b2b4d2cf5a0f0
+  HydraAsync: e931acbcd0733d157fe50561a98d3140ba4ba2df
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: a19fb3d0a0817523ea8fff48bec685a4d628fd1f
+PODFILE CHECKSUM: 6d289337a04bc15b2843e1ccbe890b16a5a9d307
 
 COCOAPODS: 1.9.3
