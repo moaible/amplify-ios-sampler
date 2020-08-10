@@ -5,12 +5,9 @@
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
-		<true/>
+		<false/>
 		<key>NSExceptionDomains</key>
-		<dict>
-			<key>https://gc7j2fw24rdrtaarsnq4x3ej3y.appsync-api.ap-northeast-1.amazonaws.com</key>
-			<string></string>
-		</dict>
+		<dict/>
 	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

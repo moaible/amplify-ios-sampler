@@ -13,8 +13,8 @@
 		5818624C24DE547D00B47312 /* AnalyticsPropertiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818624A24DE547D00B47312 /* AnalyticsPropertiesCell.swift */; };
 		5818624D24DE547D00B47312 /* AnalyticsPropertiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5818624B24DE547D00B47312 /* AnalyticsPropertiesCell.xib */; };
 		5818626D24DEE25A00B47312 /* GraphQLQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */; };
-		5818626E24DEE25A00B47312 /* GraphQLMutationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */; };
-		5818626F24DEE25A00B47312 /* GraphQLMutationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */; };
+		5818626E24DEE25A00B47312 /* GraphQLMutationCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626824DEE25A00B47312 /* GraphQLMutationCreateViewController.swift */; };
+		5818626F24DEE25A00B47312 /* GraphQLMutationCreateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626924DEE25A00B47312 /* GraphQLMutationCreateViewController.storyboard */; };
 		5818627024DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */; };
 		5818627124DEE25A00B47312 /* GraphQLSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5818626B24DEE25A00B47312 /* GraphQLSubscriptionViewController.swift */; };
 		5818627224DEE25A00B47312 /* GraphQLQueryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */; };
@@ -69,8 +69,8 @@
 		5818624A24DE547D00B47312 /* AnalyticsPropertiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsPropertiesCell.swift; sourceTree = "<group>"; };
 		5818624B24DE547D00B47312 /* AnalyticsPropertiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalyticsPropertiesCell.xib; sourceTree = "<group>"; };
 		5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLQueryViewController.swift; sourceTree = "<group>"; };
-		5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLMutationViewController.swift; sourceTree = "<group>"; };
-		5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLMutationViewController.storyboard; sourceTree = "<group>"; };
+		5818626824DEE25A00B47312 /* GraphQLMutationCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLMutationCreateViewController.swift; sourceTree = "<group>"; };
+		5818626924DEE25A00B47312 /* GraphQLMutationCreateViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLMutationCreateViewController.storyboard; sourceTree = "<group>"; };
 		5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLSubscriptionViewController.storyboard; sourceTree = "<group>"; };
 		5818626B24DEE25A00B47312 /* GraphQLSubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLSubscriptionViewController.swift; sourceTree = "<group>"; };
 		5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphQLQueryViewController.storyboard; sourceTree = "<group>"; };
@@ -204,9 +204,9 @@
 		5818626224DEE09800B47312 /* GraphQL API */ = {
 			isa = PBXGroup;
 			children = (
-				5818626924DEE25A00B47312 /* GraphQLMutationViewController.storyboard */,
-				5818626824DEE25A00B47312 /* GraphQLMutationViewController.swift */,
 				58A6319924E0610100A95BB0 /* Wrapper */,
+				5818626924DEE25A00B47312 /* GraphQLMutationCreateViewController.storyboard */,
+				5818626824DEE25A00B47312 /* GraphQLMutationCreateViewController.swift */,
 				5818626C24DEE25A00B47312 /* GraphQLQueryViewController.storyboard */,
 				5818626724DEE25A00B47312 /* GraphQLQueryViewController.swift */,
 				5818626A24DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard */,
@@ -446,7 +446,7 @@
 				5818627224DEE25A00B47312 /* GraphQLQueryViewController.storyboard in Resources */,
 				58DA850C24D9C3B700E7DF49 /* amplifyconfiguration.json in Resources */,
 				5818627024DEE25A00B47312 /* GraphQLSubscriptionViewController.storyboard in Resources */,
-				5818626F24DEE25A00B47312 /* GraphQLMutationViewController.storyboard in Resources */,
+				5818626F24DEE25A00B47312 /* GraphQLMutationCreateViewController.storyboard in Resources */,
 				58DA84E224D9B40600E7DF49 /* Assets.xcassets in Resources */,
 				58DA84E024D9B40200E7DF49 /* Main.storyboard in Resources */,
 				58B321D824DBF0B90039D71C /* AnalyticsGlobalPropertiesViewController.storyboard in Resources */,
@@ -609,7 +609,7 @@
 				58DA84D924D9B40200E7DF49 /* AppDelegate.swift in Sources */,
 				58DA84DB24D9B40200E7DF49 /* SceneDelegate.swift in Sources */,
 				580FAFCC24DA7265002BBB6F /* LibraryFeatureListViewController.swift in Sources */,
-				5818626E24DEE25A00B47312 /* GraphQLMutationViewController.swift in Sources */,
+				5818626E24DEE25A00B47312 /* GraphQLMutationCreateViewController.swift in Sources */,
 				5818626D24DEE25A00B47312 /* GraphQLQueryViewController.swift in Sources */,
 				58A6319B24E0611E00A95BB0 /* Promise+AmplifyAPI.swift in Sources */,
 				5856FBEB24DAECF400C0C5C7 /* LibraryFeatureViewConvertible.swift in Sources */,
