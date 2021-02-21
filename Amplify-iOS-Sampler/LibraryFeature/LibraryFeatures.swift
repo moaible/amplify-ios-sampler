@@ -27,7 +27,8 @@ func libraryFeatures(libraryPrefix: String) -> [String] {
     case .graphql:
         return [
             "Query",
-            "Mutation",
+            "MutationCreate",
+            "MutationEdit",
             "Subscription"
         ]
     }

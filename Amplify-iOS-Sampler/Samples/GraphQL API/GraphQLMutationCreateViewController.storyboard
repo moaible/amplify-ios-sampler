@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wov-rS-0Y1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GraphQL Mutation Create View Controller-->
+        <scene sceneID="xJt-jx-l9i">
+            <objects>
+                <viewController storyboardIdentifier="GraphQLMutationCreateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wov-rS-0Y1" customClass="GraphQLMutationCreateViewController" customModule="Amplify_iOS_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vnq-49-xLT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-nX-xJh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                                <subviews>
+                                    <switch autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lla-5g-ZL4">
+                                        <rect key="frame" x="321" y="20.5" width="51" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="Vww-RS-iiV"/>
+                                        </constraints>
+                                        <color key="onTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Analytics Enabled" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1y-JE-OlY">
+                                        <rect key="frame" x="8" y="16" width="297" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Lk0-rT-5x9"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lla-5g-ZL4" firstAttribute="leading" secondItem="X1y-JE-OlY" secondAttribute="trailing" constant="16" id="6Fu-8L-QQp"/>
+                                    <constraint firstAttribute="trailing" secondItem="lla-5g-ZL4" secondAttribute="trailing" constant="44" id="DQI-re-1Bh"/>
+                                    <constraint firstItem="X1y-JE-OlY" firstAttribute="leading" secondItem="cTd-nX-xJh" secondAttribute="leading" constant="8" id="Ql8-8J-XLW"/>
+                                    <constraint firstItem="lla-5g-ZL4" firstAttribute="centerY" secondItem="cTd-nX-xJh" secondAttribute="centerY" constant="4" id="VZ3-UD-0Nl"/>
+                                    <constraint firstAttribute="height" constant="64" id="hk1-0R-gQ9"/>
+                                    <constraint firstItem="X1y-JE-OlY" firstAttribute="centerY" secondItem="cTd-nX-xJh" secondAttribute="centerY" constant="8" id="iQH-2P-tZ3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7u-5h-zE5">
+                                <rect key="frame" x="0.0" y="774" width="414" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKJ-uy-RDw">
+                                        <rect key="frame" x="134" y="14" width="146" height="36"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                        <state key="normal" title="Create Todo">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="NKJ-uy-RDw" firstAttribute="centerY" secondItem="d7u-5h-zE5" secondAttribute="centerY" id="CmJ-dl-mqr"/>
+                                    <constraint firstAttribute="height" constant="64" id="Uoy-iF-V3L"/>
+                                    <constraint firstItem="NKJ-uy-RDw" firstAttribute="centerX" secondItem="d7u-5h-zE5" secondAttribute="centerX" id="hRN-lL-XZM"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="6qf-0Z-5Qc">
+                                <rect key="frame" x="16" y="201" width="382" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="YLK-MD-7Ly"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v49-jz-s9h">
+                                <rect key="frame" x="0.0" y="137" width="414" height="64"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Todo title：" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWn-7Z-jEA">
+                                        <rect key="frame" x="8" y="8" width="398" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="KRe-hk-JAK"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lWn-7Z-jEA" firstAttribute="leading" secondItem="v49-jz-s9h" secondAttribute="leading" constant="8" id="5u3-Ms-0L2"/>
+                                    <constraint firstItem="lWn-7Z-jEA" firstAttribute="top" secondItem="v49-jz-s9h" secondAttribute="top" constant="8" id="Eug-Su-0HB"/>
+                                    <constraint firstAttribute="height" constant="64" id="gTX-6t-jaf"/>
+                                    <constraint firstAttribute="trailing" secondItem="lWn-7Z-jEA" secondAttribute="trailing" constant="8" id="pLO-wV-3kf"/>
+                                    <constraint firstAttribute="bottom" secondItem="lWn-7Z-jEA" secondAttribute="bottom" constant="8" id="vUy-FA-TxI"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description：" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-47-1YX">
+                                <rect key="frame" x="16" y="281" width="398" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kHv-GC-1GV"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-ry-uFU">
+                                <rect key="frame" x="16" y="329" width="382" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="IGx-KC-h2x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6qf-0Z-5Qc" firstAttribute="top" secondItem="v49-jz-s9h" secondAttribute="bottom" id="Ahh-ht-HNY"/>
+                            <constraint firstItem="d7u-5h-zE5" firstAttribute="leading" secondItem="EDS-up-E3C" secondAttribute="leading" id="CcS-gA-0jX"/>
+                            <constraint firstItem="v49-jz-s9h" firstAttribute="leading" secondItem="EDS-up-E3C" secondAttribute="leading" id="Pf2-F8-Ung"/>
+                            <constraint firstItem="PcI-ry-uFU" firstAttribute="top" secondItem="pzf-47-1YX" secondAttribute="bottom" id="QPJ-7e-xGV"/>
+                            <constraint firstItem="cTd-nX-xJh" firstAttribute="top" secondItem="EDS-up-E3C" secondAttribute="top" id="Rbu-P5-ApL"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="trailing" secondItem="pzf-47-1YX" secondAttribute="trailing" id="RvN-ZE-2Tk"/>
+                            <constraint firstItem="6qf-0Z-5Qc" firstAttribute="leading" secondItem="EDS-up-E3C" secondAttribute="leading" constant="16" id="UET-Zu-rT8"/>
+                            <constraint firstItem="cTd-nX-xJh" firstAttribute="leading" secondItem="EDS-up-E3C" secondAttribute="leading" id="ZbJ-cA-STK"/>
+                            <constraint firstItem="v49-jz-s9h" firstAttribute="top" secondItem="cTd-nX-xJh" secondAttribute="bottom" constant="29" id="aUs-TQ-wv4"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="trailing" secondItem="6qf-0Z-5Qc" secondAttribute="trailing" constant="16" id="aZl-2l-Olz"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="trailing" secondItem="PcI-ry-uFU" secondAttribute="trailing" constant="16" id="cb0-q4-kSi"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="trailing" secondItem="cTd-nX-xJh" secondAttribute="trailing" id="gz4-6U-sUq"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="bottom" secondItem="d7u-5h-zE5" secondAttribute="bottom" constant="24" id="ids-th-a81"/>
+                            <constraint firstItem="PcI-ry-uFU" firstAttribute="leading" secondItem="EDS-up-E3C" secondAttribute="leading" constant="16" id="lBb-51-6zR"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="trailing" secondItem="d7u-5h-zE5" secondAttribute="trailing" id="pJz-PL-9MS"/>
+                            <constraint firstItem="pzf-47-1YX" firstAttribute="leading" secondItem="EDS-up-E3C" secondAttribute="leading" constant="16" id="t24-Nn-hdz"/>
+                            <constraint firstItem="pzf-47-1YX" firstAttribute="top" secondItem="6qf-0Z-5Qc" secondAttribute="bottom" constant="32" id="xxP-V6-dco"/>
+                            <constraint firstItem="EDS-up-E3C" firstAttribute="trailing" secondItem="v49-jz-s9h" secondAttribute="trailing" id="yqM-QE-Pcz"/>
+                            <constraint firstItem="v49-jz-s9h" firstAttribute="width" secondItem="cTd-nX-xJh" secondAttribute="width" id="zCS-ko-hsj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EDS-up-E3C"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqO-Cf-ddq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+</document>
